@@ -13,9 +13,8 @@ export const Hero = () => {
                     height: "100vh",
                     "@sm": {
                     },
-                    backgroundImage: "url(/bg.jpg)",
+                    background: "url(/bg.jpg) no-repeat center center fixed",
                     backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
                     position: "relative"
                 }}
             >
