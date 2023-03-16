@@ -5,18 +5,37 @@ import { Box } from "./styles/box";
 import { Flex } from "./styles/flex";
 
 export const Hero = () => {
-    return (
-        <>
-            <Flex
-                css={{
-                    width: "100vw",
-                    height: "100vh",
-                    "@sm": {
-                    },
-                    background: "url(/bg.jpg) no-repeat center center fixed",
-                    backgroundSize: "cover",
-                    position: "relative"
-                }}
+  return (
+    <>
+      <Flex
+        css={{
+          width: "100vw",
+          height: "100vh",
+          "@sm": {
+          },
+          background: "url(/bg.jpg) no-repeat center center fixed",
+          backgroundSize: "cover",
+          position: "relative"
+        }}
+      >
+        <Box
+          css={{
+            position: "absolute",
+            bottom: 150,
+            left: 150,
+          }}
+        >
+          <Box
+            css={{
+              maxWidth: "600px",
+            }}
+          >
+            <Text
+              h1
+              css={{
+                display: "inline",
+              }}
+              color={"black"}
             >
                 <Box
                     css={{
@@ -62,16 +81,16 @@ export const Hero = () => {
                         </Text>
                     </Box>
 
-                    <Text
-                        css={{
-                            color: "$accents8",
-                            maxWidth: "600px",
-                            pt: "$10"
-                        }}
-                        size={"$xl"}
-                    >
-                        Earn crypto while you socialize! Join the platform that rewards you for sharing your content and engaging with others.
-                    </Text>
+          <Text
+            css={{
+              color: "$accents8",
+              maxWidth: "600px",
+              pt: "$10"
+            }}
+            size={"$xl"}
+          >
+            Earn crypto while you socialize! Join the platform that rewards you for sharing your content and engaging with others.
+          </Text>
 
                     <Flex
                         css={{
