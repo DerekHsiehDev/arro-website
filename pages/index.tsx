@@ -9,7 +9,6 @@ import { Features2 } from "../components/feature2";
 import { Features3 } from "../components/features3";
 import { Testimonials } from "../components/testimonials";
 import { Statistics } from "../components/statistics";
-import { Plans } from "../components/plans";
 import { Faq } from "../components/faq";
 import { Trial } from "../components/trial";
 import { Footer } from "../components/footer";
@@ -17,18 +16,14 @@ import { Footer } from "../components/footer";
 const Home: NextPage = () => {
   return (
     <Layout>
-      {/* <Nav /> */}
+      <Nav />
       <Box as="main">
         <Hero />
-        <Trusted />
         <Features1 />
-        <Features2 />
-        <Features3 />
         <Testimonials />
         <Statistics />
-        <Plans />
         <Faq />
-        <Trial />
+        {/* <Trial /> */}
         <Footer />
       </Box>
     </Layout>
