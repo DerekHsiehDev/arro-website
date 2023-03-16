@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { Nav } from "../components/navbar";
 import { Layout } from "../components/layout";
 import { Hero } from "../components/hero";
-import { Trusted } from "../components/trusted";
 import { Box } from "../components/styles/box";
 import { Features1 } from "../components/features1";
 import { Features2 } from "../components/feature2";
