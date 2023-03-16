@@ -1,6 +1,6 @@
 import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
-import {AcmeLogo} from './logo';
+import ArroLogo from './logo';
 import {Box} from './styles/box';
 import {Flex} from './styles/flex';
 
@@ -30,7 +30,7 @@ export const Footer = () => {
                   direction={'column'}
                   align={'center'}
                >
-                  <AcmeLogo />
+                  <ArroLogo />
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
@@ -205,10 +205,10 @@ export const Footer = () => {
                      }}
                      wrap={'wrap'}
                   >
-                     <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
+                     <ArroLogo />
+                     <ArroLogo />
+                     <ArroLogo />
+                     <ArroLogo />
                   </Flex>
                   <Flex
                      css={{
