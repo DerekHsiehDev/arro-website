@@ -21,8 +21,11 @@ export const Hero = () => {
                 <Box
                     css={{
                         position: "absolute",
-                        bottom: 150,
-                        left: 150,
+                        bottom: 200,
+                        left: 80,
+                        backgroundColor: "#F0ECF2",
+                            borderRadius: 30,
+                            padding: 20,
                     }}
                 >
                     <Box
@@ -77,7 +80,7 @@ export const Hero = () => {
                         }}
                         wrap={"wrap"}
                     >
-                        <Button size="lg" css={{ borderRadius: "$pill" }}>Get Started</Button>
+                        <Button size="lg" css={{ borderRadius: "$pill", zIndex: 1 }}>Get Started</Button>
                     </Flex>
                 </Box>
             </Flex>

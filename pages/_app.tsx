@@ -9,6 +9,7 @@ const darkModernTheme = createTheme({
     colors: {
       primary: '#7928CA',
       primaryLight: '#582A87',
+      text: "#ffff",
       success: '#FF1CF7'
     }
   }
@@ -21,6 +22,7 @@ const lightModernTheme = createTheme({
     colors: {
       primary: '#7928CA',
       primaryLight: '#d9c2f0',
+      text: "#ffff",
       success: '#FF1CF7'
     }
   }
