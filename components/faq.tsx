@@ -16,7 +16,7 @@ export const Faq = () => {
         direction={'column'}
       >
         <Flex align={'center'} direction={'column'}>
-          <Text span color="primary" size={"$5xl"}>
+          <Text h1 color="primary" >
             FAQ
           </Text>
           <Text h2>Have Questions?</Text>
@@ -44,8 +44,7 @@ export const Faq = () => {
             <BoxIcon />
             <Flex direction={'column'} css={{ gap: '$3' }}>
               <Text h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit?
+                What is Arro Token, and how does it work?
               </Text>
               <Text
                 span
@@ -53,15 +52,7 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Sed condimentum, nisl ut aliquam
-                lacinia, nisl nisl aliquet aliquet Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Sed condimentum, nisl
-                ut aliquam lacinia, nisl nisl aliquet aliquet Lorem
-                ipsum dolor sit amet, aliquam lacinia, nisl nisl aliquet
-                aliquet
+                Arro is a blockchain-based cryptocurrency that operates on the Ethereum network. It was created to facilitate fast and secure transactions between users, with the added benefit of decentralization. The token can be used to pay for goods and services, transfer funds, or be traded on various cryptocurrency exchanges.
               </Text>
               <Text
                 span
@@ -69,12 +60,6 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                aliquet elit. Sed condimentum, nisl ut aliquam lacinia,
-                nisl nisl aliquet aliquet
               </Text>
             </Flex>
           </Flex>
@@ -83,8 +68,7 @@ export const Faq = () => {
             <BoxIcon />
             <Flex direction={'column'} css={{ gap: '$3' }}>
               <Text h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit?
+                How can I earn Arro Tokens on Arro Social Media App?
               </Text>
               <Text
                 span
@@ -92,14 +76,7 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                adipiscing adipiscing elit. Sed condimentum, nisl ut
-                aliquam lacinia, nisl nisl aliquet aliquet Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Sed
-                condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                aliquet
+                Users can earn Arro Tokens on Arro Social by participating in various activities such as creating content, commenting, liking, and sharing posts. The more engagement you generate on the platform, the more Arro Cryptocurrency Tokens you can earn.
               </Text>
               <Text
                 span
@@ -107,10 +84,6 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                condimentum, aliquet
               </Text>
             </Flex>
           </Flex>
@@ -119,8 +92,7 @@ export const Faq = () => {
             <BoxIcon />
             <Flex direction={'column'} css={{ gap: '$3' }}>
               <Text h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit?
+                How can I use Arro Cryptocurrency Tokens?
               </Text>
               <Text
                 span
@@ -128,9 +100,7 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                aliquet
+                Arro Cryptocurrency Tokens can be used within the Arro Social Media App ecosystem to purchase premium features, boost visibility of posts, and access exclusive content. Users can also trade Arro Cryptocurrency Tokens on cryptocurrency exchanges.
               </Text>
               <Text
                 span
@@ -138,11 +108,6 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                condimentum, Sed condimentum, nisl ut aliquam lacinia,
-                nisl nisl aliquet aliquet
               </Text>
             </Flex>
           </Flex>
@@ -151,8 +116,7 @@ export const Faq = () => {
             <BoxIcon />
             <Flex direction={'column'} css={{ gap: '$3' }}>
               <Text h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit?
+                How does Arro Social Media App pay users with crypto for their engagement?
               </Text>
               <Text
                 span
@@ -160,10 +124,7 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed condimentum, nisl ut aliquam lacinia, nisl nisl
-                aliquet aliquet Lorem ipsum dolor sit amet, consectetur
-                adipiscing
+                Arro Social Media App pays users with crypto by sharing a portion of its advertising revenue with its users. As a user generates more engagement on the platform, they receive a higher payout in Arro Cryptocurrency Tokens. Users can then choose to hold or trade their tokens as they see fit.
               </Text>
               <Text
                 span
@@ -171,12 +132,6 @@ export const Faq = () => {
                   color: '$accents8',
                 }}
               >
-                elit. Sed condimentum, nisl ut aliquam lacinia, nisl
-                nisl aliquet aliquet elit. Sed condimentum, nisl ut
-                aliquam lacinia, nisl nisl aliquet aliquet elit. Sed
-                condimentum, nisl ut aliquam lacinia, nisl nisl aliquet
-                aliquet elit. Sed condimentum, nisl ut aliquam lacinia,
-                nisl nisl aliquet aliquet
               </Text>
             </Flex>
           </Flex>

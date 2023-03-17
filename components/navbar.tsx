@@ -35,7 +35,7 @@ export const Nav = () => {
       <Navbar.Brand>
         <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
         <ArroLogo />
-        <Text css={{ marginLeft: 15}} b color="inherit" hideIn="xs">
+        <Text css={{ marginLeft: 15 }} b color="inherit" hideIn="xs">
           Arro Social
         </Text>
         <Navbar.Content
@@ -79,25 +79,25 @@ export const Nav = () => {
               }}
             >
               <Dropdown.Item
-                key="autoscaling"
+                key="scaling"
                 showFullDescription
-                description="ACME scales apps to meet user demand, automagically, based on load."
+                description="Scalable Cryptocurrency exchange technology for millions of users."
                 icon={icons.scale}
               >
-                Autoscaling
+                Scalable
               </Dropdown.Item>
               <Dropdown.Item
                 key="usage_metrics"
                 showFullDescription
-                description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                description="Use our app to earn Crypto in real-time."
                 icon={icons.activity}
               >
-                Usage Metrics
+                Earn Crypto with Usage
               </Dropdown.Item>
               <Dropdown.Item
                 key="production_ready"
                 showFullDescription
-                description="ACME runs on ACME, join us and others serving requests at web scale."
+                description="State of the art technology ensuring transparency and privacy."
                 icon={icons.flash}
               >
                 Production Ready
@@ -113,10 +113,10 @@ export const Nav = () => {
               <Dropdown.Item
                 key="supreme_support"
                 showFullDescription
-                description="Overcome any challenge with a supporting team ready to respond."
+                description="Get your questions answered anytime by our amazing support team."
                 icon={icons.user}
               >
-                +Supreme Support
+                Support
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -149,14 +149,14 @@ export const Nav = () => {
               minWidth: '100%',
             }}
             target="_blank"
-            href="https://github.com/Siumauricio/landing-template-nextui"
+            href="https://github.com/derekhsiehdev/arro-website"
           >
             <GithubIcon />
           </Link>
         </Navbar.CollapseItem>
       </Navbar.Collapse>
       <Navbar.Content>
-        <ModalLogin />
+        {/* <ModalLogin /> */}
 
         <Navbar.Item>
           <NewsletterForm />
@@ -168,7 +168,7 @@ export const Nav = () => {
               minWidth: '100%',
             }}
             target="_blank"
-            href="https://github.com/Siumauricio/landing-template-nextui"
+            href="https://github.com/derekhsiehdev/arro-website"
           >
             <GithubIcon />
           </Link>
