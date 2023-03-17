@@ -6,7 +6,6 @@ import React, { useEffect, useState } from 'react';
 import { Box } from './styles/box';
 import { Flex } from './styles/flex';
 
-import useIntersectionObserver from '@/hooks/useIntersection';
 import { useRef } from 'react'
 
 export const Statistics = () => {
@@ -36,6 +35,7 @@ export const Statistics = () => {
           pb: '$16',
           px: '$6',
         }}
+        id="statistics"
       >
 
         <div>
