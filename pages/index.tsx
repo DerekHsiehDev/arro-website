@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { Nav } from "../components/navbar";
 import { Layout } from "../components/layout";
 import { Hero } from "../components/hero";
-import { Trusted } from "../components/trusted";
 import { Box } from "../components/styles/box";
 import { Features1 } from "../components/features1";
 import { Features2 } from "../components/feature2";
@@ -10,7 +9,6 @@ import { Features3 } from "../components/features3";
 import { Testimonials } from "../components/testimonials";
 import { Statistics } from "../components/statistics";
 import { Faq } from "../components/faq";
-import { Trial } from "../components/trial";
 import { Footer } from "../components/footer";
 
 const Home: NextPage = () => {
@@ -23,7 +21,6 @@ const Home: NextPage = () => {
         <Testimonials />
         <Statistics />
         <Faq />
-        {/* <Trial /> */}
         <Footer />
       </Box>
     </Layout>

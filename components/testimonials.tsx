@@ -168,8 +168,8 @@ export const Testimonials = () => {
             },
           }}
         >
-          <Text h2>Testimonials</Text>
-          <Text h3 color="primary">From our wonderful users</Text>
+          <Text h1>Testimonials</Text>
+          <Text h2 color="primary">From our wonderful users</Text>
         </Flex>
       </Flex>
 
