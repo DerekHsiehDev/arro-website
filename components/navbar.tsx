@@ -6,6 +6,7 @@ import ArroLogo from './logo';
 import { useTheme as useNextTheme } from 'next-themes';
 import { useTheme } from '@nextui-org/react';
 import { GithubIcon } from './GithubIcon';
+import NewsletterForm from './NewsletterForm';
 
 export const Nav = () => {
   const { setTheme } = useNextTheme();
@@ -158,9 +159,7 @@ export const Nav = () => {
         <ModalLogin />
 
         <Navbar.Item>
-          <Button auto>
-            Start free trial
-          </Button>
+          <NewsletterForm />
         </Navbar.Item>
         <Navbar.Item hideIn={'xs'}>
           <Link
