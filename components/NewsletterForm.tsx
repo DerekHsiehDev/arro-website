@@ -18,7 +18,7 @@ function NewsletterForm() {
 	const [hasAnimationPlayed, setHasAnimationPlayed] = useState(false);
 
 	const defaultOptions = {
-		loop: true,
+		loop: false,
 		autoplay: true,
 		animationData: animationData,
 		rendererSettings: {
@@ -36,11 +36,15 @@ function NewsletterForm() {
 
 	const subscribe = async () => {
 
+		const userInput = email;
+		setEmail("");
+		setVisible(false);
+		
 		// 3. Send a request to our API with the user's email address.
 		const res = await fetch("/api/subscribe", {
 			body: JSON.stringify({
 				//@ts-ignore
-				email: email,
+				email: userInput,
 			}),
 			headers: {
 				"Content-Type": "application/json",
@@ -52,13 +56,9 @@ function NewsletterForm() {
 
 		if (error) {
 			// 4. If there was an error, update the message in state.
-            console.error(error.message)
+			console.error(error.message);
 			return;
 		}
-
-		// 5. Clear the input value and show a success message.
-		setEmail("");
-        setVisible(false)
 	};
 
 	return (
@@ -73,41 +73,63 @@ function NewsletterForm() {
 				open={visible}
 				onClose={closeHandler}
 			>
-				<Modal.Header css={{ marginBottom: 0 }}>
-					<Text color="#fff" b size={"$3xl"}>
-						Subscribe to our
-						<Text b size={"$3xl"} color="primary">
-							{" "}
-							newsletter
+				{hasAnimationPlayed && (
+					<Modal.Header css={{ marginBottom: 0 }}>
+						<Text color="#fff" b size={"$3xl"}>
+							Subscribe to our
+							<Text b size={"$3xl"} color="primary">
+								{" "}
+								newsletter
+							</Text>
 						</Text>
-					</Text>
-				</Modal.Header>
+					</Modal.Header>
+				)}
 				<Modal.Body>
 					{!hasAnimationPlayed && (
-						<Lottie options={defaultOptions} height={250} />
+						<Lottie
+							options={defaultOptions}
+							height={300}
+							eventListeners={[
+								{
+									eventName: "complete",
+									callback: () => setHasAnimationPlayed(true),
+								},
+							]}
+						/>
 					)}
-					<Input
-						css={{ marginTop: 40 }}
-						clearable
-						bordered
-						fullWidth
-						color="primary"
-						size="lg"
-						placeholder="Email"
-						type="email"
-						value={email}
-						onChange={(e) => {
-							setEmail(e.currentTarget.value);
-						}}
-					/>
+					{hasAnimationPlayed && (
+						<Input
+							css={{ marginTop: 40 }}
+							clearable
+							bordered
+							fullWidth
+							color="primary"
+							size="lg"
+							placeholder="Email"
+							type="email"
+							value={email}
+							onChange={(e) => {
+								setEmail(e.currentTarget.value);
+							}}
+						/>
+					)}
 				</Modal.Body>
 				<Modal.Footer>
-					<Button auto flat color="error" onPress={closeHandler}>
-						Close
-					</Button>
-					<Button auto onPress={() => {subscribe()}}>
-						Subscribe
-					</Button>
+					{hasAnimationPlayed && (
+						<>
+							<Button auto flat color="error" onPress={closeHandler}>
+								Close
+							</Button>
+							<Button
+								auto
+								onPress={() => {
+									subscribe();
+								}}
+							>
+								Subscribe
+							</Button>
+						</>
+					)}
 				</Modal.Footer>
 			</Modal>
 		</>
