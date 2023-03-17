@@ -62,16 +62,16 @@ export const Hero = () => {
             </Text>
           </Box>
 
-          <Text
-            css={{
-              color: "$accents8",
-              maxWidth: "600px",
-              pt: "$10"
-            }}
-            size={"$xl"}
-          >
-            Earn crypto while you socialize! Join the platform that rewards you for sharing your content and engaging with others.
-          </Text>
+                    <Text
+                        css={{
+                            color: "$accents8",
+                            maxWidth: "600px",
+                            pt: "$10"
+                        }}
+                        size={"$xl"}
+                    >
+                        Earn crypto while you socialize! Join the platform that rewards you for sharing your content and engaging with others.
+                    </Text>
 
           <Flex
             css={{
