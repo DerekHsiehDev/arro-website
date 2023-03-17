@@ -5,6 +5,10 @@ import { Box } from "./styles/box";
 import { Flex } from "./styles/flex";
 
 export const Hero = () => {
+
+  const clickHandler = () => {
+    window.open("https://www.hotbit.io/exchange?symbol=ARRO_USDT", "_blank");
+  }
   return (
     <>
       <Flex
@@ -17,6 +21,7 @@ export const Hero = () => {
           backgroundSize: "cover",
           position: "relative"
         }}
+        id="hero"
       >
         <Box
           css={{
@@ -80,7 +85,7 @@ export const Hero = () => {
             }}
             wrap={"wrap"}
           >
-            <Button size="lg" css={{ borderRadius: "$pill", zIndex: 1 }}>Get Started</Button>
+            <Button size="lg" css={{ borderRadius: "$pill", zIndex: 1 }} onClick={()=>{clickHandler()}}>Get Started</Button>
           </Flex>
         </Box>
       </Flex>

@@ -26,6 +26,7 @@ export const Features1 = () => {
             px: '$64',
           },
         }}
+        id="values"
       >
         <Flex direction="column">
           <Text h1 color="primary">
