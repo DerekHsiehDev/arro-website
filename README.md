@@ -21,9 +21,9 @@ To get started with Arro Social Website, follow these steps:
 4. Run the development server by running `yarn dev`.
 5. Navigate to http://localhost:3000 to view the application.
 6. Add the following environment variables to your .env.local file:
-    - MAILCHIMP_API_KEY: Your Mailchimp API key.
-    - MAILCHIMP_API_SERVER: Your Mailchimp API server, such as `us21`
-    - MAILCHIMP_AUDIENCE_ID: The ID of the Mailchimp audience you want to use for your newsletter.
+    - `MAILCHIMP_API_KEY`: Your Mailchimp API key.
+    - `MAILCHIMP_API_SERVER`: Your Mailchimp API server, such as `us21`
+    - `MAILCHIMP_AUDIENCE_ID`: The ID of the Mailchimp audience you want to use for your newsletter.
     - Make sure to include these variables in your .env.local file and add the file to your .gitignore file to keep your keys secure.
 
 ## Getting Help
