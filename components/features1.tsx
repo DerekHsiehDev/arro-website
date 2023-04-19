@@ -96,7 +96,10 @@ export const Features1 = () => {
                   color: '$accents8',
                 }}
               >
-                We've utilized blockchain technology to create the first social media platform with a borderless currency.
+                {
+                  `We&apos;ve utilized blockchain technology to create the first social media platform with a borderless currency.`
+
+                }
               </Text>
             </Flex>
           </Flex>

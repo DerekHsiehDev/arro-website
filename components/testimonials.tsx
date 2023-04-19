@@ -88,7 +88,7 @@ export const Testimonials = () => {
                       color: '$accents8',
                     }}
                   >
-                    Arro Social is not only an amazing social platform but it's also built on decentralized technology which means my data is more secure and private.
+                    {`Arro Social is not only an amazing social platform but it&apos;s also built on decentralized technology which means my data is more secure and private.`}
                   </Text>
                   <Text
                     span
